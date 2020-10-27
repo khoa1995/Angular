@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="form-group">
+        <label>Mã sp</label>
+        <input type="text" class="form-control" #masp>
+      </div>
+      <div class="form-group">
+        <label>Tên sp</label>
+        <input type="text" class="form-control" #tensp>
+      </div>
+      <div class="form-group">
+        <label>Giá</label>
+        <input type="number" class="form-control" #gia>
+    </div>
+    <button class="btn btn-success">Thêm sản phẩm</button>
+    <table class="table mt-2">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Mã SP</th>
+                <th>Tên SP</th>
+                <th>Giá SP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let sp of dssp; let idx = index">
+                <td>{{idx + 1}}</td>
+                <td>{{sp.maSP}}</td>
+                <td>{{sp.tenSP}}</td>
+                <td>{{sp.gia}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
