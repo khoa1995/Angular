@@ -1,0 +1,23 @@
+<!-- <p class="demo">demo works, Khoa!</p>
+ -->
+
+ <p>{{message}}</p>
+
+ <!-- Property binding  -->
+ <!-- muốn binding dữ liệu vào thẻ dùng [] -->
+ <!-- đặt #messageRef = đang DOM tới thẻ input  -->
+ <input type="text" [value]="message" #messageRef/>
+
+ <!-- Event binding -->
+  <!-- muốn binding event dùng ( ) -->
+  <!-- get value input  -->
+ <button class="btn btn-success mx-2" (click)="changeMessage(messageRef)">Click</button>
+
+ <p>{{username}}</p>
+ <input type="text" [value]="username" (input)="changeUserName($event)">
+
+ <p>{{fullName}}</p>
+ <input type="text" [value]="fullName" (input)="fullName = $event.target.value">
+
+ <p>{{email}}</p>
+ <input type="text" [(ngModel)]= "email">
