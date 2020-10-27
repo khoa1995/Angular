@@ -1,0 +1,18 @@
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar {
+  width: 25%;
+  text-align: center;
+  background-color: yellow;
+}
+
+.content {
+  width: 75%;
+  text-align: center;
+  background-color: green;
+}
+/*# sourceMappingURL=app.component.css.map */
