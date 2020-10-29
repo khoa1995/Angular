@@ -1,17 +1,17 @@
 <div class="container">
     <div class="form-group">
         <label>Mã sp</label>
-        <input type="text" class="form-control" #masp>
+        <input type="text" class="form-control" #masp required minlength="4">
       </div>
       <div class="form-group">
         <label>Tên sp</label>
-        <input type="text" class="form-control" #tensp>
+        <input type="text" class="form-control" #tensp required>
       </div>
       <div class="form-group">
         <label>Giá</label>
-        <input type="number" class="form-control" #gia>
+        <input type="number" class="form-control" #gia required>
     </div>
-    <button class="btn btn-success">Thêm sản phẩm</button>
+    <button class="btn btn-success" (click)="themSP(masp.value, tensp.value, gia.value)">Thêm sản phẩm</button>
     <table class="table mt-2">
         <thead>
             <tr>

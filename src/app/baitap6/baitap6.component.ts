@@ -16,7 +16,7 @@ export class Baitap6Component implements OnInit {
   ngOnInit(): void {
   }
 
-  themSP() {
-    
+  themSP(maSP: string, tenSP: string, gia: number) {
+    this.dssp.push({maSP, tenSP, gia})
   }
 }
